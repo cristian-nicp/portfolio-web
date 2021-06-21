@@ -491,7 +491,7 @@ main > .contact{
 .contact__item > a{
   display: block;
   font-size: 1.8rem;
-  color: var(--color3);
+  color: var(--just-white);
   text-align: center;
 }
 
@@ -513,7 +513,7 @@ main > .contact{
   padding-inline: 2em;
   margin: 0 auto;
   margin-block-start: 3em;
-  background-color: var(--color5);
+  background-color: var(--just-white);
   border-inline-start: 2px solid var(--intense-salmon-color);
   border-block-end: 2px solid var(--intense-salmon-color);
   border-radius: 4px;
@@ -563,7 +563,7 @@ main > .contact{
   margin-block-end: .1em;
   font-size: 1.7rem;
   outline: none;
-  color: var(--color5);
+  color: var(--just-white);
   background-color: var(--intense-salmon-color);
   border: 1px solid;
 }
@@ -573,6 +573,6 @@ footer{
   padding-block: .3em;
   font-size: 2rem;
   text-align: center;
-  color: var(--color5);
+  color: var(--just-white);
   border-block-start: 1px solid var(--just-white);
 }
