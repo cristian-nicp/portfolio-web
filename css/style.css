@@ -52,7 +52,7 @@ nav{
   width: 100%;
   height: auto;
   background-color: var(--bg-color);
-  border-bottom: 1px solid var(--color5);
+  border-bottom: 1px solid var(--just-white);
 }
 
 .nav-logo{
@@ -423,7 +423,7 @@ main > .specialized{
   margin-block-start: .6em;
   margin-block-end: .2em;
   font-size: 2.2rem;
-  color: var(--color3);
+  color: var(--dark-text-color);
 }
 
 .specialized__item > .specialized__carddescription{
@@ -470,7 +470,7 @@ main > .contact{
 .contact__description > .contact__paragraph{
   margin-block-end: 1.3em;
   font-size: 1.8rem;
-  color: var(--color5);
+  color: var(--just-white);
 }
 
 .contact__description > .contact__sn-links{
@@ -480,7 +480,7 @@ main > .contact{
 }
 
 .contact__sn-links > .contact__item{
-  background-color: var(--color5);
+  background-color: var(--just-white);
   padding: 1em;
   text-align: center;
   border-radius:4px;
@@ -491,7 +491,8 @@ main > .contact{
 .contact__item > a{
   display: block;
   font-size: 1.8rem;
-  color: var(--just-white);
+  color: var(--dark-text-color);
+  background-color: var(--just-white);
   text-align: center;
 }
 
