@@ -1,10 +1,11 @@
 :root{
   --color2:#363636;
   --color1:#222;
-  --color3:#101010;
+  --bg-color:#101010;/*3*/
   --color4:#ff4f6d;
   --color5:#fdfbfb;
-  --color6:#ffffff;
+  --just-white:#ffffff;
+  --dark-text-color:#101011;
   --secondary-text-color:#68686b;
 }
 
@@ -20,7 +21,7 @@ html{
 }
 
 body{
-  background-color: var(--color1);
+  background-color: var(--bg-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -40,7 +41,7 @@ header{
   width: 100%;
   min-width: 320px;
   height: auto;
-  background-color: var(--color1);
+  background-color: var(--bg-color);
   font-size: 2.1rem;
 }
 
@@ -51,7 +52,7 @@ nav{
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: var(--color1);
+  background-color: var(--bg-color);
   border-bottom: 1px solid var(--color5);
 }
 
@@ -64,8 +65,8 @@ nav > .nav-logo > a {
   padding-inline: .3em;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--color1);
-  background-color: var(--color5);
+  color: var(--bg-color);
+  background-color: var(--just-white);
   border-radius: .4em;
 }
 
@@ -77,15 +78,14 @@ nav > .nav-hamburger{
   position: relative;
   width: 60px;
   height: 60px;
-  background-color: transparent;
+  background-color: var(--bg-color);
 }
 
 .nav-hamburger > .bar{ 
   width:80%;
   margin: 0 auto;
   height: 4px;
-  background-color: var(--color5);
-  color: var(--color5);
+  background-color: var(--just-white);
   border-radius: 10px;
 }
 
@@ -94,7 +94,7 @@ nav > .nav-hamburger{
   position: absolute;
   width: 80%;
   height: 4px;
-  background-color: var(--color5);
+  background-color: var(--just-white);
   border-radius: 10px;
 }
 
@@ -128,9 +128,9 @@ nav > .nav-cto{
   padding-inline: 1em;
   font-size: 1.8rem;
   letter-spacing: 1px;
-  background-color: var(--color1);
-  color: var(--color5);
-  border: 1px solid var(--color5);
+  background-color: var(--bg-color);
+  color: var(--just-white);
+  border: 1px solid var(--just-white);
 }
 
 nav > .nav-links{
@@ -144,7 +144,7 @@ nav > .nav-links{
   left: 0;
   z-index: 2;
   height: 89vh;
-  background-color: var(--color1);
+  background-color: var(--bg-color);
   list-style: none;
   opacity: .9;
   transition: all .8s ease-in-out;
@@ -160,7 +160,7 @@ nav > .nav-links{
   width: 100%;
   padding-block: 2em;
   padding-inline-start: .6em;
-  color: var(--color5);
+  color: var(--just-white);
   letter-spacing: 4px;
 }
 
@@ -186,7 +186,7 @@ main > .hero{
   margin: 0 auto;
   margin-block-start: .6em;
   margin-block-end: .4em;
-  color: var(--color5);
+  color: var(--just-white);
   font-size: 2.4rem;
 }
 
@@ -202,7 +202,7 @@ main > .hero{
   color: var(--secondary-text-color);
 }
 
-.hero > .hero__svg-bg{
+/*.hero > .hero__svg-bg{
   position: absolute;
   bottom: -22%;
   background: url("../assets/images/Endless-Constellation.svg") no-repeat;
@@ -211,7 +211,7 @@ main > .hero{
   width: 100%;
   height: 60%;
   z-index: -1;
-}
+}*/
 
 /* portfolio section */
 main > .portfolio{
@@ -342,7 +342,7 @@ main > .about{
   margin-block-start: .2em;
   font-size: 2.2rem;
   font-weight: 600;
-  color: var(--color6);
+  color: var(--just-white);
   border: 1px solid var(--secondary-text-color);
   box-shadow: 14px -8px var(--color2);
 }
@@ -398,7 +398,7 @@ main > .specialized{
   min-height: 400px;
   padding-block: 2.5em;
   padding-inline: 1.5em;
-  background-color: var(--color5);
+  background-color: var(--just-white);
   border-inline-start: 5px solid var(--color4);
 }
 
@@ -419,7 +419,7 @@ main > .specialized{
   height: 100%;
   text-align: center;
   font-size: 1.8rem;
-  color: var(--color2);
+  color: var(--dark-text-color);
 }
 
 /*Contact / Hire Me Section*/
@@ -452,7 +452,7 @@ main > .contact{
   margin-block-end: .2em;
   font-size: 3rem;
   font-weight: 600;
-  color: var(--color6) ;
+  color: var(--just-white) ;
 }
 
 .contact__description > .contact__paragraph{
@@ -515,7 +515,7 @@ main > .contact{
   font-size: 2.7rem;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--color3);
+  color: var(--dark-text-color);
 }
 
 .contact__form > .contact__label{
