@@ -1,8 +1,8 @@
 :root{
-  --color2:#363636;
+  --bg-grey-color:#363636;
   --color1:#222;
-  --bg-color:#101010;/*3*/
-  --intense-salmon-color:#ff4f6d;/*4*/
+  --bg-color:#101010;
+  --intense-salmon-color:#ff4f6d;
   --just-white:#ffffff;
   --dark-text-color:#101011;
   --secondary-text-color:#68686b;
@@ -81,11 +81,14 @@ nav > .nav-hamburger{
 }
 
 .nav-hamburger > .bar{ 
+  display: block;
   width:80%;
   margin: 0 auto;
   height: 4px;
   background-color: var(--just-white);
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .bar::before, .bar::after{
@@ -104,22 +107,23 @@ nav > .nav-hamburger{
 
 nav > .nav-hamburger > .bar::after{
   bottom: 30%;
+  transition: all .5s ease-in-out;
 }
 
 
 /*ANIMATION-js*/
-.nav-hamburger.open .bar{
-  transform: translateX(-50px);
-  background: transparent;
+.nav-hamburger.active .bar{
+  background-color: var(--bg-color);
 }
 
-.nav-hamburger.open .bar::before{
-  transform: rotate(45deg) translate(35px,-35px);
-  transition: all .5s ease-in-out;
+.nav-hamburger.active .bar::before{
+  transform: translateY(8px) rotate(45deg);
 }
-.nav-hamburger.open .bar::after{
-  transform: rotate(-45deg) translate(35px,35px); 
+
+.nav-hamburger.active .bar::after{
+  transform: translateY(-12px) rotate(-45deg);
 }
+
 /*end Hamburger*/
 
 nav > .nav-cto{
@@ -133,20 +137,24 @@ nav > .nav-cto{
 }
 
 nav > .nav-links{
-  display: none;
+  display: flex;
   position: fixed;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: -100%;
+  width: 100%;
   z-index: 2;
-  height: 89vh;
+  height: 89.4vh;/*check*/
   background-color: var(--bg-color);
   list-style: none;
-  opacity: .9;
-  transition: all .8s ease-in-out;
+  transition: .4s;
+}
+/*menu js*/
+.nav-links.active{
+  left: 0;
 }
 
 .nav-links > .nav-links__item{
@@ -281,7 +289,7 @@ main > .portfolio{
   left: 50%;
   transform: translateX(-50%);
   box-shadow: inset 0 0 0 200px rgb(255 255 255 / 20%);
-  filter: blur(10px);
+  filter: blur(5px);
 }
 
 
@@ -356,7 +364,7 @@ main > .about{
   font-weight: 600;
   color: var(--just-white);
   border: 1px solid var(--secondary-text-color);
-  box-shadow: 14px -8px var(--color2);
+  box-shadow: 14px -8px var(--bg-grey-color);
 }
 
 .about__aside > .about__downloadcv > span{
@@ -518,7 +526,7 @@ main > .contact{
   border-inline-start: 2px solid var(--intense-salmon-color);
   border-block-end: 2px solid var(--intense-salmon-color);
   border-radius: 4px;
-  box-shadow: 14px -20px var(--color2);
+  box-shadow: 14px -20px var(--bg-grey-color);
 }
 
 .contact__form > .contact__form-title{
