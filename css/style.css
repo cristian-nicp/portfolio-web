@@ -2,8 +2,7 @@
   --color2:#363636;
   --color1:#222;
   --bg-color:#101010;/*3*/
-  --color4:#ff4f6d;
-  --color5:#fdfbfb;
+  --intense-salmon-color:#ff4f6d;/*4*/
   --just-white:#ffffff;
   --dark-text-color:#101011;
   --secondary-text-color:#68686b;
@@ -191,7 +190,7 @@ main > .hero{
 }
 
 .hero__title > span{
-  background-color: var(--color4);
+  background-color: var(--intense-salmon-color);
 }
 
 .hero > .hero__description{
@@ -341,9 +340,9 @@ main > .about{
 .about__aside > .about__subtitle{
   margin-block-start: .5em;
   margin-block-end: 1em;
-  text-decoration: underline var(--color4);
+  text-decoration: underline var(--intense-salmon-color);
   font-size: 2.8rem;
-  color: var(--color5);
+  color: var(--just-white);
 }
 
 .about__aside > .about__downloadcv{
@@ -371,7 +370,7 @@ main > .about{
   background: url("../assets/icons/file_download_white_18dp.svg") no-repeat;
   background-position: center;
   background-size: contain;
-  background-color: var(--color4);
+  background-color: var(--intense-salmon-color);
   border-radius: 50%;
 }
 
@@ -412,7 +411,7 @@ main > .specialized{
   padding-block: 2.5em;
   padding-inline: 1.5em;
   background-color: var(--just-white);
-  border-inline-start: 5px solid var(--color4);
+  border-inline-start: 5px solid var(--intense-salmon-color);
 }
 
 .specialized__item > .specialized__img{
@@ -485,7 +484,7 @@ main > .contact{
   padding: 1em;
   text-align: center;
   border-radius:4px;
-  border-block-end: 4px solid var(--color4);
+  border-block-end: 4px solid var(--intense-salmon-color);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
@@ -515,8 +514,8 @@ main > .contact{
   margin: 0 auto;
   margin-block-start: 3em;
   background-color: var(--color5);
-  border-inline-start: 2px solid var(--color4);
-  border-block-end: 2px solid var(--color4);
+  border-inline-start: 2px solid var(--intense-salmon-color);
+  border-block-end: 2px solid var(--intense-salmon-color);
   border-radius: 4px;
   box-shadow: 14px -20px var(--color2);
 }
@@ -551,7 +550,7 @@ main > .contact{
   color: var(--color3);
   border: none;
   outline: none;
-  border-block-end: 2px solid var(--color4);
+  border-block-end: 2px solid var(--intense-salmon-color);
 }
 
 .contact__form > .contact__submit-btn{
@@ -565,7 +564,7 @@ main > .contact{
   font-size: 1.7rem;
   outline: none;
   color: var(--color5);
-  background-color: var(--color4);
+  background-color: var(--intense-salmon-color);
   border: 1px solid;
 }
 
@@ -575,5 +574,5 @@ footer{
   font-size: 2rem;
   text-align: center;
   color: var(--color5);
-  border-block-start: 1px solid var(--color5);
+  border-block-start: 1px solid var(--just-white);
 }
